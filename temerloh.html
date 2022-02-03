@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<title>Temerloh</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+
+    a:link, a:visited
+    {
+      text-align: left;
+      text-decoration: none;
+    }
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="https://www.facebook.com/search/top?q=pahang" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.instagram.com/explore/locations/664046199/pahang/" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="https://twitter.com/search?q=pahang&src=typed_query" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="images/images2.jpg" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>What's Fun in Pahang?</b></h1><p><h6 class="w3-text-white">Temerloh "Ikan Patin" City</h6></p>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+    </div>
+  </header>
+
+  <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>NATIONAL ELEPHANT CONSERVATION CENTER</h3>
+          <h5>Fun Times with majestic creatures in Kuala Gandah<span class="w3-opacity"> Jan 18, 2022</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="images/images20.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p>The museum displays many artifacts that are important in the history of the country and local Malay culture. The museum was officially opened by Sultan Ahmad Shah around October 1976. This interesting place in Pahang Town is located in the former residence of the British Resident, built in 1929. The muzuim was later bought by the Sultan of Pahang in 1948 and was renamed as Kota Beram Palace. In 1965, the Sultan moved his residence to a new palace (Abu Bakar Palace), where he was the royal palace now. By visiting this muzuim, you can learn a variety of interesting Islamic arts of the past as there are various galleries, artifacts, ceramics, and archeology on display.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">0</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="images/images15.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Myra Zainal <span class="w3-opacity w3-medium">Jan 14, 2022, 5:21PM</span></h4>
+                <p>Great blog post! Following</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+            <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>TEMERLOH DAY MARKET</h3>
+          <h5>The largest market in peninsular Malaysia<span class="w3-opacity"> Jan 24, 2022</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="images/images21.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
+          <p>Pekan Sehari, Bandar Temerloh is the largest in peninsular Malaysia located on the shores of Sungai Temerloh along more than 2,000 meters involving almost 1,000 traders to be the focus of the community to get various goods. Located near Sungai Pahang in Jalan Lurah Semantan, Temerloh Day Market is packed with sales of various types of goods, these include clothes, souvenirs, food, wet ingredients and more.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">0</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="images/images14.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Dahlia Rizal <span class="w3-opacity w3-medium">Jan 26, 2022, 10:52 PM</span></h4>
+                <p>Love your blog page! Simply the best! </p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="images/images16.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Imran Aqil <span class="w3-opacity w3-medium">Jan 26, 2022, 10:53 PM</span></h4>
+                <p>Love that!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+        <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="images/images22.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container w3-black">
+          <h4>"Ikan Patin" City</h4>
+          <p>Temerloh is a developed and organized city. It is located in Central Pahang and is the meeting point between the West Coast of Peninsular Malaysia and the East Coast of Peninsular Malaysia. Temerloh is also known as Bandar Ikan Patin because this type of fish is abundant here, as the city is close to the river better known as Sungai Pahang.</p>
+        </div>
+      </div>
+      <hr>
+
+  <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Popular Posts</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <a href="KUANTAN.HTML"><img src="images/images7.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Kuantan</span>
+            <br>
+            <span>The Capital of Pahang</span></a>
+          </li>
+          <li class="w3-padding-16">
+            <a href="temerloh.html"><img src="images/images8.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Temerloh</span>
+            <br>
+            <span>"Ikan Patin" City</span></a>
+          </li>
+          <li class="w3-padding-16">
+            <a href="Tioman.html"><img src="images/images9.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Rompin</span>            <br>
+            <span>Sailfish Capital of Asia</span></a>
+          </li>
+          <li class="w3-padding-16">
+            <a href="bera.html"><img src="images/images10.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Bera</span>
+            <br>
+            <span>The Border of Pahang and Negeri Sembilan</span></a>
+          </li>
+          <li class="w3-padding-16">
+            <a href="pekan.html" target="_self"><img src="images/images11.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Pekan</span>
+            <br>
+            <span>Royal Town of Pahang</span></a>
+          </li>
+          <li class="w3-padding-16">
+            <a href="BukitTinggi.html"><img src="images/images12.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Bentong-Bukit Tinggi</span>
+            <br>
+            <span>Nature vacation center</span></a>
+          </li>
+        </ul>
+      </div>
+      <hr>
+  </div>
+</div>
+
+</body>
+</html>
